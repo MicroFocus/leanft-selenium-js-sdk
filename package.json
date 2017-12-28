@@ -1,12 +1,25 @@
 {
   "name": "leanft-selenium-js-sdk",
+  "version": "1.0.0",
   "description": "The LeanFT SDK for Selenium",
-  "version": "14.3.0",
   "main": "app.js",
-  "license": "Apache 2.0",
   "dependencies": {
     "q": "1.4.1",
     "png-crop": "0.0.1"
+  },
+  "devDependencies": {
+    "assert": "^1.3.0",
+    "expect": "1.20.1",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-mocha": "^2.2.0",
+    "jshint": "^2.9.2",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicroFocus/leanft-selenium-js-sdk.git"
   },
   "keywords": [
     "LeanFT",
@@ -15,18 +28,10 @@
     "functional",
     "testing"
   ],
-  "devDependencies": {
-    "del": "^2.2.1",
-    "assert": "^1.3.0",
-    "expect": "1.20.1",
-    "gulp": "^3.9.1",
-    "gulp-jshint": "^2.0.1",
-    "gulp-shell": "^0.5.2",
-    "gulp-mocha": "^2.2.0",
-    "gulp-plumber": "^1.1.0",
-    "jsdoc": "^3.3.3",
-    "jshint": "^2.9.2",
-    "mocha": "^2.4.5",
-    "sinon": "^1.17.3"
-  }
+  "author": "MicroFocus",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/MicroFocus/leanft-selenium-js-sdk/issues"
+  },
+  "homepage": "https://github.com/MicroFocus/leanft-selenium-js-sdk#readme"
 }
