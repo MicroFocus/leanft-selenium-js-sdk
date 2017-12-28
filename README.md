@@ -1,9 +1,8 @@
 # leanft-selenium-js-sdk
 
-The LeanFT JavaScript SDK for Selenium
+LeanFT JavaScript SDK for Selenium
 
-
-LeanFT for Selenium JavaScript SDKs that extend the WebDriver API with additional locators and utilities. By using these SDKs you can create more robust or generic identifications for your objects, and use built-in utilities rather than writing them yourself from scratch.
+LeanFT for Selenium JavaScript SDK extends the Selenium WebDriver API with locators and utilities that enable creating tests which are more robust, and reduces Selenium test automation and maintenance efforts.
 
 ## Install
 
@@ -13,7 +12,40 @@ npm install leanft-selenium-js-sdk --save
 
 ## Usage Example
 
-Locate an element using Regular Expression attributes and highlight it.
+The following example demonstrates locating elements by their visible text.
+
+```js
+var webdriver = require("selenium-webdriver");
+var Builder = webdriver.Builder;
+var LeanFT4S = require("leanft-selenium-js-sdk");
+var By = LeanFT4S.By(webdriver.By);
+
+var driver = new Builder().forBrowser("chrome").build();
+
+driver.get("http://www.google.com/en");
+
+// Locates the "Google Search" button
+var element = driver.findElement(By.visibleText("Google Search"));
+
+driver.quit();
+```
+
+The following example demonstrates locating elements using a regular expression
+```js
+var webdriver = require("selenium-webdriver");
+var Builder = webdriver.Builder;
+var LeanFT4S = require("leanft-selenium-js-sdk");
+var By = LeanFT4S.By(webdriver.By);
+
+var driver = new Builder().forBrowser("chrome").build();
+driver.get("http://www.google.com");
+
+var element = driver.findElement(By.name(/^btn/));
+
+driver.quit();
+```
+
+Locate an element using its HTML attributes and highlight it.
 
 ```js
 var webdriver = require("selenium-webdriver");
@@ -38,48 +70,38 @@ driver.quit();
 
 ## API
 
-For full documented API please see LeanFT For Selenium  [Documentation](https://admhelp.microfocus.com/leanft/en/latest/HelpCenter/Content/JS4S_SDK/top-Selenium-JS.htm)
+LeanFT for Selenium API reference documentation can be found [here
+](https://admhelp.microfocus.com/leanft/en/latest/HelpCenter/Content/JS4S_SDK/top-Selenium-JS.htm)
 
 ### New Locators
-#### By.each
-
-Returns a new locator that locates elements according to one or more locators (attributes, tags, styles etc.).
 
 #### By.visibleText
 
-Returns a new locator that locates elements with the provided visibleText parameter.
+Returns a new locator that enables finding elements based on their visible text.
 
 #### By.visible
 
-Returns a new locator that locates elements that are either visible or not, depending on the paramater passed.
-
-#### By.name
-
-Returns a new locator that locates elements with the provided name parameter.
-
-#### By.tagName
-
-Returns a new locator that locates elements with the provided tagName parameter.
-
-#### By.linkText
-
-Returns a new locator that locates elements with the provided linkText parameter.
+Returns a new locator that enables finding elements based on their visibility.
 
 #### By.role
 
-Returns a new locator that locates elements with the provided role parameter.
+Returns a new locator that enables finding elements based on their role.
 
 #### By.type
 
-Returns a new locator that locates elements with the provided type parameter.
+Returns a new locator that enables finding elements based on their type.
 
 #### By.attributes
 
-Returns a new locator that locates elements according to the provided attributes. You can also use regular expressions.
+Returns a new locator that enables finding elements based on their attributes (one or more). Attributes values can be defined using regular expressions.
 
 #### By.styles
 
-Returns a new locator that locates elements according to one or more styles. You can also use regular expressions.
+Returns a new locator that enables finding elements based on their computed style (one or more). Computed style values can be defined using regular expressions.
+
+#### By.each
+
+Returns a new locator that enables finding elements based on the combination of locators (attributes, tags, styles etc.).
 
 #### By.any
 
@@ -95,6 +117,9 @@ All the locators which accepts string as value of the element's property were ex
 
 * By.id
 * By.className
+* By.linkText
+* By.name
+* By.tagName
 
 ## Utilities
 
