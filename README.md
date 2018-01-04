@@ -2,7 +2,7 @@
 
 LeanFT JavaScript SDK for Selenium
 
-LeanFT for Selenium JavaScript SDK extends the Selenium WebDriver API with locators and utilities that enable creating tests which are more robust, and reduces Selenium test automation and maintenance efforts.
+LeanFT for Selenium JavaScript SDK LeanFT for Selenium JavaScript SDK extends the Selenium WebDriver API with locators and utilities that enable creating tests that are more robust, and reduces Selenium test automation and maintenance efforts.
 
 ## Install
 
@@ -30,7 +30,8 @@ var element = driver.findElement(By.visibleText("Google Search"));
 driver.quit();
 ```
 
-The following example demonstrates locating elements using a regular expression
+The following example demonstrates locating elements using a regular expression.
+
 ```js
 var webdriver = require("selenium-webdriver");
 var Builder = webdriver.Builder;
@@ -93,7 +94,7 @@ Returns a new locator that enables finding elements based on their type.
 
 #### By.attributes
 
-Returns a new locator that enables finding elements based on their attributes (one or more). Attributes values can be defined using regular expressions.
+Returns a new locator that enables finding elements based on their attributes (one or more). Attribute values can be defined using regular expressions.
 
 #### By.styles
 
@@ -101,7 +102,7 @@ Returns a new locator that enables finding elements based on their computed styl
 
 #### By.each
 
-Returns a new locator that enables finding elements based on the combination of locators (attributes, tags, styles etc.).
+Returns a new locator that enables finding elements based on a combination of locators (attributes, tags, styles etc.).
 
 #### By.any
 
@@ -113,7 +114,7 @@ Returns a new locator that locates elements by using locators that describe the 
 
 ### Regular Expression Support
 
-All the locators which accepts string as value of the element's property were extended to support regular expressions including the following Selenium native locators:
+All the locators which accept a string as a value of the element's property, were extended to support regular expressions including the following Selenium native locators:
 
 * By.id
 * By.className
@@ -134,7 +135,7 @@ Highlights the selenium element in the browser.
 
 ## build
 
-To build the project clone it and run the following command
+To build the project, clone it and run the following command:
 
 ```
 npm install gulp -g
@@ -143,9 +144,8 @@ gulp build
 
 ## Running Test
 
-To build the project clone it and run the following command
+To run the unit-tests of the project after you have built it run the following command:
 
 ```
-npm install gulp -g
 gulp test
 ```
