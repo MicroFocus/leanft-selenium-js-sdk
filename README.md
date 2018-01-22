@@ -139,6 +139,7 @@ To build the project, clone it and run the following command:
 
 ```
 npm install gulp -g
+npm install
 gulp build
 ```
 
