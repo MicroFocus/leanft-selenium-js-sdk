@@ -2,7 +2,7 @@
 
 LeanFT JavaScript SDK for Selenium
 
-LeanFT for Selenium JavaScript SDK LeanFT for Selenium JavaScript SDK extends the Selenium WebDriver API with locators and utilities that enable creating tests that are more robust, and reduces Selenium test automation and maintenance efforts.
+LeanFT for Selenium JavaScript SDK extends the Selenium WebDriver API with locators and utilities that enable creating tests that are more robust, and reduces Selenium test automation and maintenance efforts.
 
 ## Install
 
