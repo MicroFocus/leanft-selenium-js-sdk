@@ -1,6 +1,6 @@
 {
   "name": "leanft-selenium-js-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The LeanFT SDK for Selenium",
   "main": "app.js",
   "dependencies": {
@@ -15,7 +15,8 @@
     "gulp-mocha": "^2.2.0",
     "jshint": "^2.9.2",
     "mocha": "^2.4.5",
-    "sinon": "^1.17.3"
+    "sinon": "^1.17.3",
+    "standard-version": "^4.3.0"
   },
   "repository": {
     "type": "git",
