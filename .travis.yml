@@ -1,7 +1,11 @@
 language: node_js
-node_js: 
-  - "iojs"
-  - "7"
+node_js:
+- '8'
 before_script:
-  - npm install -g gulp-cli
+- npm install -g gulp-cli
 script: gulp dev
+deploy:
+  provider: npm
+  email: avishay.ben.shabtai@gmail.com
+  api_key:
+    secure: mKMXBISgOMGQAUiu4/2Dg/3uLhxkkz6dK2KIQhoqDUM9JfIBFTCMbvEKNxikVIaEBumj0LcIRr/mkVS33BvH8HoAQlPgHb6dw4ok728fxekK2zSgSOC0rZ+WrA4JjvWNE7RkKSjjajBUYDMltcjYaNmm0EsaAM9xEc3L7+Ua6DWd2QOX28SCwcB7lu4eztKnpC8DClKpdnmFUuzFDGt7W5GAyPxEaPT2sBZ4SVYR3ntP8wwoEv7nX448X6jXBeJBwjOlnSScmkoA4VFszMdMWuBS7nu7LSducYkKg3tH9+xNeBgROqwnrqo/bay1BoWwCV6tsbXOuU1sKVksBwJNZSa+zKSvQ24MHtPWZIdOrI4+ajTt5AqaJgs5L/L8LrKuxwjMMeUD0ZLnGeZBt7JDgk2KgR9qxSCufoTuL18w+bMXDm8Cn7mygx7hJ24WOqak2CwWrMm9G5RuWsGZyTk98Tvnp3O17/Er5QOmesOKDbzmE//Z5/5ewZO5eA5zZM4Q2FMGkJRg7CKlksn5DlVKeB8bDxcWSDlqZmReZh59g5emtrgLhaYMM/qHtAOyBseVtH5rR9rI4NdqlX1y6x9oJFso++zi7sGsAeiT3Iv/uxins16Z3+taF3rXfDg7FCIyfl4iYxox4dcLKkL1hsSPsud8pzXks8ZYL+eW8xPriKk=
