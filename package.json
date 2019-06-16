@@ -14,7 +14,7 @@
     "gulp-jshint": "^2.0.1",
     "gulp-mocha": "^2.2.0",
     "jshint": "^2.9.2",
-    "mocha": "^2.4.5",
+    "mocha": "^6.1.4",
     "sinon": "^1.17.3",
     "standard-version": "^4.4.0"
   },
