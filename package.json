@@ -4,8 +4,8 @@
   "description": "The LeanFT SDK for Selenium",
   "main": "app.js",
   "dependencies": {
-    "q": "1.4.1",
-    "png-crop": "0.0.1"
+    "png-crop": "0.0.2",
+    "q": "1.5.1"
   },
   "devDependencies": {
     "del": "5.1.0",
