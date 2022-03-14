@@ -1,6 +1,6 @@
 {
   "name": "leanft-selenium-js-sdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The LeanFT SDK for Selenium",
   "main": "app.js",
   "dependencies": {
